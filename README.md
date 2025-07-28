@@ -11,7 +11,7 @@ Este projeto é um sistema de visualização e filtragem de pilotos de corrida, 
 2. **Passo a passo:**
    - Clone o repositório:
      ```bash
-     git clone https://github.com/seu-usuario/seu-repositorio.git
+     git clone [https://github.com/ValvassoriDev/Grid-Lancamento]
      ```
    - Abra o projeto no Visual Studio.
    - Restaure os pacotes (o Visual Studio faz isso automaticamente ao abrir o projeto).
