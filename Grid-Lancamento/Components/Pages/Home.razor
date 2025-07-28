@@ -1,0 +1,76 @@
+﻿@rendermode InteractiveServer
+@page "/"
+@using GridLancamento.Models
+@using GridLancamento.Data
+@inject PilotoService PilotoService
+
+<div class="home-container">
+    <header class="home-header">
+        <NavMenu />
+    </header>
+
+    <div class="home-content">
+        <h1 class="home-title">
+            🏁 Bem-vindos ao Grid de Lançamento!
+        </h1>
+
+        <p class="home-description">
+            Este projeto simula o ranqueamento de pilotos por categorias, mostrando informações como equipe e melhor volta.
+        </p>
+
+        @if (gruposPorCategoria == null)
+        {
+            <p>Carregando pilotos...</p>
+        }
+        else
+        {
+            @foreach (var grupo in gruposPorCategoria)
+            {
+                if (!grupo.Any()) continue;
+
+                <div class="categoria-bloco">
+                    <h3 class="categoria-titulo">Categoria: @grupo.Key</h3>
+
+                    <table class="tabela-pilotos">
+                        <thead>
+                            <tr>
+                                <th>#</th>
+                                <th>Nome</th>
+                                <th>Equipe</th>
+                                <th>Melhor Volta</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            @{
+                                var index = 1;
+                                foreach (var piloto in grupo)
+                                {
+                                    <tr class="tabela-linha">
+                                        <td>@index</td>
+                                        <td>@piloto.Nome</td>
+                                        <td>@piloto.Equipe</td>
+                                        <td>@piloto.MelhorVolta</td>
+                                    </tr>
+                                    index++;
+                                }
+                            }
+                        </tbody>
+                    </table>
+                </div>
+            }
+        }
+    </div>
+</div>
+
+@code {
+    private List<IGrouping<string, Piloto>>? gruposPorCategoria;
+
+    protected override async Task OnInitializedAsync()
+    {
+        var pilotos = await PilotoService.ObterPilotosAsync();
+        gruposPorCategoria = pilotos
+            .GroupBy(p => p.Categoria)
+            .OrderBy(g => g.Key)
+            .ToList();
+    }
+}

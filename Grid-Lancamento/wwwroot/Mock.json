@@ -1,0 +1,153 @@
+[
+  {
+    "Nome": "Lucas Andrade",
+    "Equipe": "Team Velocity",
+    "MelhorVolta": "01:32:456",
+    "Categoria": "Formula 1",
+    "Peso": 72.5,
+    "Sexo": "Masculino",
+    "Nacionalidade": "Brasil",
+    "Tracado": "Interlagos"
+  },
+  {
+    "Nome": "Sophie Muller",
+    "Equipe": "Storm Racers",
+    "MelhorVolta": "01:34:102",
+    "Categoria": "Kart",
+    "Peso": 60.3,
+    "Sexo": "Feminino",
+    "Nacionalidade": "Alemanha",
+    "Tracado": "Granja Viana"
+  },
+  {
+    "Nome": "Carlos Ruiz",
+    "Equipe": "Speed Hunters",
+    "MelhorVolta": "01:33:890",
+    "Categoria": "Stock Car",
+    "Peso": 78.0,
+    "Sexo": "Masculino",
+    "Nacionalidade": "Espanha",
+    "Tracado": "Aldeia da Serra"
+  },
+  {
+    "Nome": "Emma Johnson",
+    "Equipe": "Silver Wings",
+    "MelhorVolta": "01:36:120",
+    "Categoria": "Kart",
+    "Peso": 59.4,
+    "Sexo": "Feminino",
+    "Nacionalidade": "Estados Unidos",
+    "Tracado": "Granja Viana"
+  },
+  {
+    "Nome": "Felipe Souza",
+    "Equipe": "Team Velocity",
+    "MelhorVolta": "01:31:950",
+    "Categoria": "Formula 1",
+    "Peso": 75.2,
+    "Sexo": "Masculino",
+    "Nacionalidade": "Brasil",
+    "Tracado": "Interlagos"
+  },
+  {
+    "Nome": "Beatriz Lima",
+    "Equipe": "Racing Queens",
+    "MelhorVolta": "01:38:210",
+    "Categoria": "Stock Car",
+    "Peso": 61.5,
+    "Sexo": "Feminino",
+    "Nacionalidade": "Portugal",
+    "Tracado": "Aldeia da Serra"
+  },
+  {
+    "Nome": "Kenji Tanaka",
+    "Equipe": "Tokyo Drift",
+    "MelhorVolta": "01:30:620",
+    "Categoria": "Formula 1",
+    "Peso": 70.1,
+    "Sexo": "Masculino",
+    "Nacionalidade": "Japão",
+    "Tracado": "Interlagos"
+  },
+  {
+    "Nome": "Alice Oliveira",
+    "Equipe": "KartPro",
+    "MelhorVolta": "01:37:004",
+    "Categoria": "Kart",
+    "Peso": 58.6,
+    "Sexo": "Feminino",
+    "Nacionalidade": "Brasil",
+    "Tracado": "Granja Viana"
+  },
+  {
+    "Nome": "Pedro Martins",
+    "Equipe": "Top Gear BR",
+    "MelhorVolta": "01:32:550",
+    "Categoria": "Stock Car",
+    "Peso": 77.1,
+    "Sexo": "Masculino",
+    "Nacionalidade": "Brasil",
+    "Tracado": "Aldeia da Serra"
+  },
+  {
+      "Nome": "Juliana Ribeiro",
+      "Equipe": "Speed Queens",
+      "MelhorVolta": "01:35:478",
+      "Categoria": "Kart",
+      "Peso": 62.1,
+      "Sexo": "Feminino",
+      "Nacionalidade": "Brasil",
+      "Tracado": "Granja Viana"
+    },
+    {
+      "Nome": "Rafael Costa",
+      "Equipe": "F1 Brasil",
+      "MelhorVolta": "01:31:245",
+      "Categoria": "Formula 1",
+      "Peso": 74.0,
+      "Sexo": "Masculino",
+      "Nacionalidade": "Brasil",
+      "Tracado": "Interlagos"
+    },
+    {
+      "Nome": "Marina Duarte",
+      "Equipe": "Apex Racers",
+      "MelhorVolta": "01:39:300",
+      "Categoria": "Stock Car",
+      "Peso": 64.8,
+      "Sexo": "Feminino",
+      "Nacionalidade": "Brasil",
+      "Tracado": "Aldeia da Serra"
+    },
+    {
+      "Nome": "Thiago Nunes",
+      "Equipe": "Super Kart BR",
+      "MelhorVolta": "01:36:587",
+      "Categoria": "Kart",
+      "Peso": 67.0,
+      "Sexo": "Masculino",
+      "Nacionalidade": "Brasil",
+      "Tracado": "Granja Viana"
+    },
+    {
+      "Nome": "Eduardo Martins",
+      "Equipe": "F1 Racing Pro",
+      "MelhorVolta": "01:30:910",
+      "Categoria": "Formula 1",
+      "Peso": 73.2,
+      "Sexo": "Masculino",
+      "Nacionalidade": "Brasil",
+      "Tracado": "Interlagos"
+    },
+    {
+      "Nome": "Fernanda Lopes",
+      "Equipe": "Stock Power",
+      "MelhorVolta": "01:38:045",
+      "Categoria": "Stock Car",
+      "Peso": 65.3,
+      "Sexo": "Feminino",
+      "Nacionalidade": "Brasil",
+      "Tracado": "Aldeia da Serra"
+    }
+  ]
+

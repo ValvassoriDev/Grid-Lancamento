@@ -1,0 +1,212 @@
+﻿@rendermode InteractiveServer
+@page "/Ranking"
+@using GridLancamento.Data
+@using GridLancamento.Models
+@inject PilotoService PilotoService
+@inherits LayoutComponentBase
+
+<div>
+    <header>
+        <NavMenu />
+    </header>
+
+    <div class="ranking-container">
+        <h2 class="ranking-titulo">
+            🏎️ Ranking de Pilotos por Grupo
+        </h2>
+
+        <div class="filtros-container">
+            <div class="filtro">
+                <label>Categoria</label>
+                <select value="@filtroCategoria"
+                        @onchange="e => AtualizarFiltroCategoria(e.Value?.ToString())">
+                    <option value="">Todas</option>
+                    @foreach (var cat in categorias)
+                    {
+                        <option value="@cat">@cat</option>
+                    }
+                </select>
+            </div>
+
+            <div class="filtro">
+                <label>Sexo</label>
+                <select value="@filtroSexo"
+                        @onchange="e => AtualizarFiltroSexo(e.Value?.ToString())">
+                    <option value="">Todos</option>
+                    @foreach (var sexo in sexos)
+                    {
+                        <option value="@sexo">@sexo</option>
+                    }
+                </select>
+            </div>
+
+            <div class="filtro">
+                <label>Traçado</label>
+                <select value="@filtroTracado"
+                        @onchange="e => AtualizarFiltroTracado(e.Value?.ToString())">
+                    <option value="">Todos</option>
+                    @foreach (var tr in tracados)
+                    {
+                        <option value="@tr">@tr</option>
+                    }
+                </select>
+            </div>
+
+            <div class="filtro">
+                <label>Peso</label>
+                <select value="@filtroPeso"
+                        @onchange="e => AtualizarFiltroPeso(e.Value?.ToString())">
+                    <option value="">Todos</option>
+                    @foreach (var peso in pesos)
+                    {
+                        <option value="@peso">@peso</option>
+                    }
+                </select>
+            </div>
+        </div>
+
+        @if (gruposFiltrados == null)
+        {
+            <p>Carregando...</p>
+        }
+        else if (gruposFiltrados.Count == 0)
+        {
+            <p>Nenhum piloto encontrado com os filtros selecionados.</p>
+        }
+        else
+        {
+            <div class="cards-container">
+                @foreach (var grupo in gruposFiltrados)
+                {
+                    if (!grupo.Any()) continue;
+                    <div class="card-ranking">
+                        <div class="card-header">
+                            @grupo.Key
+                        </div>
+                        <div class="card-body">
+                            <table class="ranking-tabela">
+                                <thead>
+                                    <tr>
+                                        <th>#</th>
+                                        <th>Nome</th>
+                                        <th>Equipe</th>
+                                        <th>Peso (kg)</th>
+                                        <th>Melhor Volta</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    @{
+                                        var index = 1;
+                                        foreach (var piloto in grupo)
+                                        {
+                                            <tr>
+                                                <td>@index</td>
+                                                <td>@piloto.Nome</td>
+                                                <td>@piloto.Equipe</td>
+                                                <td>@piloto.Peso</td>
+                                                <td>@piloto.MelhorVolta</td>
+                                            </tr>
+                                            index++;
+                                        }
+                                    }
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                }
+            </div>
+        }
+    </div>
+</div>
+
+@code {
+    private List<Piloto> todosPilotos = new();
+    private List<IGrouping<string, Piloto>> gruposFiltrados = new();
+
+    private List<string> categorias = new();
+    private List<string> sexos = new();
+    private List<string> tracados = new();
+    private List<string> pesos = new();
+
+    private string filtroCategoria = "";
+    private string filtroSexo = "";
+    private string filtroTracado = "";
+    private string filtroPeso = "";
+
+    protected override async Task OnInitializedAsync()
+    {
+        todosPilotos = await PilotoService.ObterPilotosAsync();
+        PopularFiltros();
+        Filtrar();
+    }
+
+    private void PopularFiltros()
+    {
+        categorias = todosPilotos.Select(p => p.Categoria).Distinct().OrderBy(c => c).ToList();
+        sexos = todosPilotos.Select(p => p.Sexo).Distinct().OrderBy(s => s).ToList();
+        tracados = todosPilotos.Select(p => p.Tracado).Distinct().OrderBy(t => t).ToList();
+        pesos = todosPilotos.Select(p => p.Peso.ToString()).Distinct().OrderBy(p => p).ToList();
+    }
+
+    private void AtualizarFiltroCategoria(string? valor)
+    {
+        filtroCategoria = valor ?? "";
+        Filtrar();
+    }
+
+    private void AtualizarFiltroSexo(string? valor)
+    {
+        filtroSexo = valor ?? "";
+        Filtrar();
+    }
+
+    private void AtualizarFiltroTracado(string? valor)
+    {
+        filtroTracado = valor ?? "";
+        Filtrar();
+    }
+
+    private void AtualizarFiltroPeso(string? valor)
+    {
+        filtroPeso = valor ?? "";
+        Filtrar();
+    }
+
+    private void Filtrar()
+    {
+        var filtrados = todosPilotos
+            .Where(p =>
+                (string.IsNullOrWhiteSpace(filtroCategoria) || p.Categoria == filtroCategoria) &&
+                (string.IsNullOrWhiteSpace(filtroSexo) || p.Sexo == filtroSexo) &&
+                (string.IsNullOrWhiteSpace(filtroTracado) || p.Tracado == filtroTracado) &&
+                (string.IsNullOrWhiteSpace(filtroPeso) || p.Peso.ToString() == filtroPeso)
+            )
+            .OrderBy(p =>
+            {
+                var partes = p.MelhorVolta.Split(':');
+                if (partes.Length == 3 &&
+                    int.TryParse(partes[0], out int min) &&
+                    int.TryParse(partes[1], out int seg) &&
+                    int.TryParse(partes[2], out int ms))
+                {
+                    return new TimeSpan(0, 0, min, seg, ms);
+                }
+                return TimeSpan.MaxValue;
+            });
+
+        if (!string.IsNullOrWhiteSpace(filtroPeso))
+        {
+            gruposFiltrados = filtrados
+                .GroupBy(p => $"Peso: {filtroPeso} kg")
+                .ToList();
+        }
+        else
+        {
+            gruposFiltrados = filtrados
+                .GroupBy(p => $"{p.Categoria} - {p.Sexo} - {p.Tracado}")
+                .ToList();
+        }
+
+        StateHasChanged();
+    }
+}

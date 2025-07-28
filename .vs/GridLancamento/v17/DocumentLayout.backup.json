@@ -1,0 +1,54 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\Acer\\Desktop\\ValvassoriDev\\PROJETOS\\Grid-Lancamento\\Grid-Lancamento\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{842A54A7-E406-4802-954B-AF086316C1C1}|Grid-Lancamento\\GridLancamento.csproj|c:\\users\\acer\\desktop\\valvassoridev\\projetos\\grid-lancamento\\grid-lancamento\\grid-lancamento\\wwwroot\\style.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}",
+      "RelativeMoniker": "D:0:0:{842A54A7-E406-4802-954B-AF086316C1C1}|Grid-Lancamento\\GridLancamento.csproj|solutionrelative:grid-lancamento\\wwwroot\\style.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{842A54A7-E406-4802-954B-AF086316C1C1}|Grid-Lancamento\\GridLancamento.csproj|c:\\users\\acer\\desktop\\valvassoridev\\projetos\\grid-lancamento\\grid-lancamento\\grid-lancamento\\components\\pages\\ranking.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{842A54A7-E406-4802-954B-AF086316C1C1}|Grid-Lancamento\\GridLancamento.csproj|solutionrelative:grid-lancamento\\components\\pages\\ranking.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 1,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "Ranking.razor",
+              "DocumentMoniker": "C:\\Users\\Acer\\Desktop\\ValvassoriDev\\PROJETOS\\Grid-Lancamento\\Grid-Lancamento\\Grid-Lancamento\\Components\\Pages\\Ranking.razor",
+              "RelativeDocumentMoniker": "Grid-Lancamento\\Components\\Pages\\Ranking.razor",
+              "ToolTip": "C:\\Users\\Acer\\Desktop\\ValvassoriDev\\PROJETOS\\Grid-Lancamento\\Grid-Lancamento\\Grid-Lancamento\\Components\\Pages\\Ranking.razor",
+              "RelativeToolTip": "Grid-Lancamento\\Components\\Pages\\Ranking.razor",
+              "ViewState": "AgIAAIIAAAAAAAAAAAAmwKoAAAAhAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-07-28T11:44:29.398Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "style.css",
+              "DocumentMoniker": "C:\\Users\\Acer\\Desktop\\ValvassoriDev\\PROJETOS\\Grid-Lancamento\\Grid-Lancamento\\Grid-Lancamento\\wwwroot\\style.css",
+              "RelativeDocumentMoniker": "Grid-Lancamento\\wwwroot\\style.css",
+              "ToolTip": "C:\\Users\\Acer\\Desktop\\ValvassoriDev\\PROJETOS\\Grid-Lancamento\\Grid-Lancamento\\Grid-Lancamento\\wwwroot\\style.css",
+              "RelativeToolTip": "Grid-Lancamento\\wwwroot\\style.css",
+              "ViewState": "AgIAAFEAAAAAAAAAAAAIwH0AAAAeAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003000|",
+              "WhenOpened": "2025-07-28T10:59:11.573Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,21 @@
+﻿@inject IJSRuntime JS
+
+<div class="header" @onclick="ToggleNavbar">
+    <nav class="navbar">
+        <ul class="menu">
+            <li>
+                <NavLink href="/" class="menu-link" Match="NavLinkMatch.All">Home</NavLink>
+            </li>
+            <li>
+                <NavLink href="/ranking" class="menu-link">Ranking</NavLink>
+            </li>
+        </ul>
+    </nav>
+</div>
+
+@code {
+    private async Task ToggleNavbar()
+    {
+        await JS.InvokeVoidAsync("eval", "document.querySelector('.navbar-toggler')?.click()");
+    }
+}

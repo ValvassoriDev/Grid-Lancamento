@@ -1,0 +1,152 @@
+[
+  {
+    "Nome": "Lucas Andrade",
+    "Equipe": "Team Velocity",
+    "MelhorVolta": "01:32:456",
+    "Categoria": "F�rmula 1",
+    "Peso": 72.5,
+    "Sexo": "Masculino",
+    "Nacionalidade": "Brasil",
+    "Tra�ado": "Interlagos"
+  },
+  {
+    "Nome": "Sophie M�ller",
+    "Equipe": "Storm Racers",
+    "MelhorVolta": "01:34:102",
+    "Categoria": "Kart",
+    "Peso": 60.3,
+    "Sexo": "Feminino",
+    "Nacionalidade": "Alemanha",
+    "Tra�ado": "Monza"
+  },
+  {
+    "Nome": "Carlos Ruiz",
+    "Equipe": "Speed Hunters",
+    "MelhorVolta": "01:33:890",
+    "Categoria": "F�rmula 1",
+    "Peso": 78.0,
+    "Sexo": "Masculino",
+    "Nacionalidade": "Espanha",
+    "Tra�ado": "Catalunya"
+  },
+  {
+    "Nome": "Emma Johnson",
+    "Equipe": "Silver Wings",
+    "MelhorVolta": "01:36:120",
+    "Categoria": "Kart",
+    "Peso": 59.4,
+    "Sexo": "Feminino",
+    "Nacionalidade": "Estados Unidos",
+    "Tra�ado": "Laguna Seca"
+  },
+  {
+    "Nome": "Felipe Souza",
+    "Equipe": "Team Velocity",
+    "MelhorVolta": "01:31:950",
+    "Categoria": "F�rmula 1",
+    "Peso": 75.2,
+    "Sexo": "Masculino",
+    "Nacionalidade": "Brasil",
+    "Tra�ado": "Interlagos"
+  },
+  {
+    "Nome": "Lena Dubois",
+    "Equipe": "Nitro Racing",
+    "MelhorVolta": "01:35:780",
+    "Categoria": "Kart",
+    "Peso": 62.0,
+    "Sexo": "Feminino",
+    "Nacionalidade": "Fran�a",
+    "Tra�ado": "Le Mans"
+  },
+  {
+    "Nome": "Kenji Tanaka",
+    "Equipe": "Tokyo Drift",
+    "MelhorVolta": "01:30:620",
+    "Categoria": "F�rmula 1",
+    "Peso": 70.1,
+    "Sexo": "Masculino",
+    "Nacionalidade": "Jap�o",
+    "Tra�ado": "Suzuka"
+  },
+  {
+    "Nome": "Alice Oliveira",
+    "Equipe": "KartPro",
+    "MelhorVolta": "01:37:004",
+    "Categoria": "Kart",
+    "Peso": 58.6,
+    "Sexo": "Feminino",
+    "Nacionalidade": "Brasil",
+    "Tra�ado": "Granja Viana"
+  },
+  {
+    "Nome": "Andreas Becker",
+    "Equipe": "Black Thunder",
+    "MelhorVolta": "01:32:300",
+    "Categoria": "F�rmula 1",
+    "Peso": 76.3,
+    "Sexo": "Masculino",
+    "Nacionalidade": "Alemanha",
+    "Tra�ado": "Hockenheim"
+  },
+  {
+    "Nome": "Beatriz Lima",
+    "Equipe": "Racing Queens",
+    "MelhorVolta": "01:38:210",
+    "Categoria": "Kart",
+    "Peso": 61.5,
+    "Sexo": "Feminino",
+    "Nacionalidade": "Portugal",
+    "Tra�ado": "Algarve"
+  },
+  {
+    "Nome": "Miguel Torres",
+    "Equipe": "Fire Wheels",
+    "MelhorVolta": "01:33:112",
+    "Categoria": "F�rmula 1",
+    "Peso": 74.9,
+    "Sexo": "Masculino",
+    "Nacionalidade": "M�xico",
+    "Tra�ado": "Hermanos Rodr�guez"
+  },
+  {
+    "Nome": "Clara Schmidt",
+    "Equipe": "KartElite",
+    "MelhorVolta": "01:36:875",
+    "Categoria": "Kart",
+    "Peso": 63.0,
+    "Sexo": "Feminino",
+    "Nacionalidade": "Su��a",
+    "Tra�ado": "Mugello"
+  },
+  {
+    "Nome": "Diego Fern�ndez",
+    "Equipe": "Red Falcon",
+    "MelhorVolta": "01:31:789",
+    "Categoria": "F�rmula 1",
+    "Peso": 73.0,
+    "Sexo": "Masculino",
+    "Nacionalidade": "Argentina",
+    "Tra�ado": "Interlagos"
+  },
+  {
+    "Nome": "Isabella Rossi",
+    "Equipe": "Bella Corse",
+    "MelhorVolta": "01:39:001",
+    "Categoria": "Kart",
+    "Peso": 60.7,
+    "Sexo": "Feminino",
+    "Nacionalidade": "It�lia",
+    "Tra�ado": "Monza"
+  },
+  {
+    "Nome": "Pedro Martins",
+    "Equipe": "Top Gear BR",
+    "MelhorVolta": "01:32:550",
+    "Categoria": "F�rmula 1",
+    "Peso": 77.1,
+    "Sexo": "Masculino",
+    "Nacionalidade": "Brasil",
+    "Tra�ado": "Bras�lia"
+  }
+]
